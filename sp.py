@@ -33,10 +33,7 @@ st.markdown("End-to-End **Supervised Machine Learning** Application")
 # --------------------------------------------------
 # Load Dataset
 # --------------------------------------------------
-BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "watson_healthcare_modified.csv"
-
-df = pd.read_csv(DATA_PATH)
+df = pd.read_csv("watson_healthcare_modified.csv")
 
 st.subheader("📁 Dataset Preview")
 st.dataframe(df.head())
